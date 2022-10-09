@@ -1,3 +1,4 @@
+import os
 """
 Django settings for cryptosite project.
 
@@ -123,4 +124,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = "spal2\CryptoApp\cryptosite\cryptoapp\static\cryptoapp"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
