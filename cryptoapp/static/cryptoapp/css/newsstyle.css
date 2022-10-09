@@ -1,0 +1,113 @@
+
+html {
+    background-image: url(https://img.freepik.com/darmowe-zdjecie/3d-ilustracyjny-cyfrowy-blokowy-lancuchowy-kod-niska-wielokatna-siatka-trojkatow-swiecacych-w-sieci-niebieskich-kropek_92790-116.jpg?w=996);
+    background-size: cover;
+    background-color:rgba(255, 89, 0, 0.945)(114, 40, 40);
+    font-family: 'Arial', Sans-serif;
+    font-size: 18px;   
+
+    }
+    p a {
+      text-align: center;
+      color: #020204;
+      }
+  
+  .container{
+    display:flex;
+    flex-wrap:inherit;
+    align-items:center;
+    justify-content:space-between
+  }
+
+  .row{
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:0;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:calc(-1 * var(--bs-gutter-y));
+  margin-right:calc(-.5 * var(--bs-gutter-x));
+  margin-left:calc(-.5 * var(--bs-gutter-x))}  
+
+  .col-sm{flex:1 0 0%}
+
+  .card{position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background-color:rgb(206, 206, 206);
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:.25rem}
+  
+  .card-img-top{border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}
+
+  .card-body{flex:1 1 auto;padding:1rem 1rem}
+
+  .card-title{margin-bottom:.5rem}
+
+  .card-text:last-child{margin-bottom:0}
+
+  .btn-primary{color:rgb(1, 0, 0);background-color:#0d6efd;border-color:#0d6efd}
+  
+  .button-19 {
+    appearance: button;
+    background-color: #020204;
+    border: solid transparent;
+    border-radius: 20px;
+    border-width: 0 0 0px;
+    box-sizing: border-box;
+    color: #1f0505;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 20 px;
+  
+    font-weight: 700;
+    letter-spacing: .1px;
+    line-height: 25px;
+    margin: auto;
+    outline: none;
+    overflow: visible;
+    padding: 5px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #e59f3c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-19:main,
+  .button-19:focus {
+    user-select: auto;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+  
+  .button-19:disabled {
+    cursor: auto;
+  }
+  
+  

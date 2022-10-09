@@ -1,0 +1,63 @@
+Spytać 
+
+Jak sprawdzić kto co odpowiedział? Jest w aplikacji survio w wersji płatnej opcja rozpoznawaniu po mejlu
+W jakiej formie odpowiedzi?
+Ankieta 2 czy 2 QUIZ?
+ILe odpowiedzi około?
+
+Ankieta:
+ PRZED
+
+Czy słyszałeś kiedykolwiek o kryptowalutach?
+Czy wiesz co to jest blockchain?
+Czy wiesz co to są kryptowaluty?
+Czy wiesz jak działa blockchain?
+Skąd dowiedziałeś się o kryptowalutach?
+Czy wiesz jakie funkcje mają kryptowaluty?
+Jak oceniasz swoją wiedzę na temat kryptowalut/blockchain?
+skala 1-10
+
+Jak oceniasz swoje doświadczenie z kryptowalutami? 
+
+Czy używałeś kiedyś kryptowalut?
+tak/nie
+
+Czy wiesz jakie ryzyka niesie ze sobą używanie kryptowalut?
+Czy planujesz używać lub inwestować w kryptowaluty?
+tak/ raczej tak
+
+Skąd czerpiesz wiadomości/wiedzę na temat kryptowalut?
+
+Czy uważasz że można zrewolucjonizowane
+
+jak inwestować?
+
+
+
+PO:
+Czy aplikacja była przydatna i zwiększyła twoją wiedzę na temat kryptowalut?
+
+Czy twoim zdaniem kryptowaluty mają szansę zmienić świat ?  
+
+Które sektory gospodarki, według Ciebie mogą najbardziej zostać zrewolucjonizowane dzięki kryptowalutom/blockchain?
+
+FINANSE/BANKOWOSC
+ŁANCUCHY DOSTAW
+SZTUKA
+BRANŻA ROZRYWKOWA
+Niewiem / Nie mam zdań
+
+Jak oceniasz swoją wiedzę na temat kryptowalut/blockchain?
+skala 1-10
+
+Jak oceniasz swoje doświadczenie z kryptowalutami? 
+
+Po co są kryptowaluty?
+JAk wpływają na świat?
+Co to jest decentralizacja?
+
+DODATKOWE
+Możliwości rozwoju apki - w którą stronę
+
+
+

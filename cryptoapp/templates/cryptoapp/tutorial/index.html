@@ -1,0 +1,25 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    <h3>{{ action }}</h3>
+    {% if all_tutorials %}
+        
+                {% for tutorial in all_tutorials %}
+                    <tr>
+                        <td> <a href="{% url 'tutorial_szczegoly' tutorial.id %}" class="button-19">{{ tutorial.name }}</a></td>
+
+                        
+                    </tr>
+                {% endfor %}
+      
+        <p>
+            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
+        </p>
+    {% else %}
+        <p>Nie dodano żadnego tutoriala</p>
+    {% endif %}
+{% endblock content %}

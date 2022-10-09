@@ -1,0 +1,15 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    {% if dict %}
+        <h3>{{ dict.name }}</h3>
+        <p>{{ dict.description | safe }}</p>
+        <p>
+            <a href="{% url 'dict' %}"> Powrót do słownika</a>
+        </p>
+    {% endif %}
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+{{ action }}
+{% endblock action%}
+
+{% block content %}
+<h3>{{ action }}</h3>
+<form action="{% url 'blockchain_nowy' %}" method="post">
+    {% csrf_token %}
+    <table class="table--no-borders">
+        {% for field in form %}
+            <tr>
+                <td>{{ field.label }}</td>
+                <td>{{ field }}</td>
+                <td>{{ field.errors.as_text }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="Submit">
+</form>
+{% endblock content %}

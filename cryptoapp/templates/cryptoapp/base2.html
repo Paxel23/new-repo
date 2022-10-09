@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'cryptoapp/css/newsstyle.css' %}">
+    
+    <p>
+      <a  href="{% url 'main' %}"> Powrót do strony głównej</a>
+  </p> 
+    <div class = "container" >
+      <div class = "row">
+          {% for x in api.Data %}
+          
+              <div class = "col-sm">
+                  <div class="card" style="width: 15rem;">
+                      <img src="{{x.imageurl }}" class="card-img-top" alt="{{x.source }}">
+                      <div class="card-body">
+                          <h5 class="card-title">{{x.title}}</h5>
+                          <p class="card-text">{{x.body|safe}}</p>
+                          <a href="{{x.url}}" class="button-19">Read more</a>
+                      </div>
+                  </div>
+                  <br>
+              </div>    
+          {% endfor %}
+      </div>
+  </div>
+  
+  
+  </body>
+
+ 
+ 
+</html>

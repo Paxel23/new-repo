@@ -1,0 +1,16 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    {% if basic %}
+        <h3>{{ basic.name }}</h3>
+        
+        <p>{{ basic.description |safe}}</p>
+        <p>
+            <a href="{% url 'basic' %}"> Powrót</a>
+        </p>
+    {% endif %}
+{% endblock content %}

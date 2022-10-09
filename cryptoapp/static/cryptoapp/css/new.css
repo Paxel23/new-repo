@@ -1,0 +1,268 @@
+
+html {
+  background-image: url(https://img.freepik.com/darmowe-zdjecie/3d-ilustracyjny-cyfrowy-blokowy-lancuchowy-kod-niska-wielokatna-siatka-trojkatow-swiecacych-w-sieci-niebieskich-kropek_92790-116.jpg?w=996);
+  scroll-behavior: smooth;
+  
+  
+}
+
+h2 {
+
+  text-align: center;
+  
+  }
+body {
+margin: 0;
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+background: #a6a2a221;
+background-color: rgba(252, 254, 255, 0.744);
+
+}
+
+.nav-bar {
+display: flex;
+align-items: center;
+height: 80px;
+width: 100%;
+margin:auto;
+background: #d5dddd;
+box-shadow: 0 0 5px grey;
+
+/* position: sticky;
+  top: 0; */
+}
+
+.nav-bar img {
+margin-left: 1opx;
+width: 95px;
+height: 85px;
+border: 0;
+border-radius: 10px;
+}
+
+.nav-bar a {
+text-decoration: none;
+margin: 2px 10  px;
+color: #013287;
+font-size: 25px;
+font-weight: normal;
+}
+
+.nav-bar a:hover {
+color: #31d8ba;
+text-shadow: 0 0 1px blue;
+}
+
+.menu {
+list-style: none;
+display: flex;
+overflow: hidden;
+align-self: center
+}
+
+
+
+.main {
+padding: 15px;
+}
+
+.image-slider {
+width: 60vw;
+height: 400px;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 5px grey;
+overflow: hidden;
+}
+
+.image-slider img {
+width: 100%;
+height: 100%;
+}
+
+.tag-line {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 95%;
+position: relative;
+left: 0;
+height: 150px;
+margin: 25px auto;
+padding: 5px;
+background: #e6e6e6;
+font-size: 30px;
+text-align: center;
+box-shadow: 0 0 5px grey;
+}
+
+
+
+
+hr {
+width: 80%;
+}
+
+
+
+.footer {
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+text-align: center;
+background: #e6e6e6;
+position: absolute;
+width: 100%;
+font-size: 15px;
+}
+
+p a {
+text-decoration: none;
+}
+
+.table-wrapper{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 23px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 23 px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+.fl-table img {
+  width: 20%; /* you can use % */
+  height: auto;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: #020204;
+  border:  1mm ridge rgba(217, 200, 200, 0.9);
+  border-radius: 20px;
+  border-width: 1 1 1px;
+  box-sizing: border-box;
+  color: #1f0505;
+  cursor:cell
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 20 px;
+
+  font-weight: 700;
+  letter-spacing: .1px;
+  line-height: 25px;
+  margin: auto;
+  outline: none;
+  overflow: visible;
+  padding: 5px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #e59f3c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+/* -----------------------------------------------CARD */
+.container{
+ 
+  flex-wrap:inherit;
+  align-items:center;
+  justify-content:space-between}
+
+.row{
+--bs-gutter-x:1.5rem;
+--bs-gutter-y:0;
+display:flex;
+flex-wrap:wrap;
+margin-top:calc(-1 * var(--bs-gutter-y));
+margin-right:calc(-.5 * var(--bs-gutter-x));
+margin-left:calc(-.5 * var(--bs-gutter-x))}  
+
+.col-sm{flex:1 0 0%}
+
+.card{position:relative;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  word-wrap:break-word;
+  background-color:#fff;
+  background-clip:border-box;
+  border:1px solid rgba(0,0,0,.125);
+  border-radius:.25rem}
+
+.card-img-top{border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}
+
+.card-body{flex:1 1 auto;padding:1rem 1rem}
+
+.card-title{margin-bottom:.5rem}
+
+.card-text:last-child{margin-bottom:0}
+
+.btn-primary{color:rgb(1, 0, 0);background-color:#0d6efd;border-color:#0d6efd}

@@ -1,0 +1,41 @@
+{% extends 'cryptoapp/base3.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+<p>
+    <a href="{% url 'main' %}"> Powrót do strony głównej</a>
+</p>
+<section>
+   <div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Aktualna cena (USD)</th>
+            <th scope="col">Kapitalizacja (USD)</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in coingeckoapi %}
+            <tr>
+        
+            <td><h5 style="color: rgb(0, 0, 0);">{{i.name}}</h5></td>
+            <td>{{i.symbol}}</td>
+            <td class="image3"><img src={{i.image}}></td>
+            <td style="color:rgb(22, 11, 4);">{{i.current_price}}</td>
+            <td style="color:rgb(4, 15, 8);">{{i.market_cap}}</td>
+        
+        
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+</div>
+</section>
+{% endblock content %}

@@ -1,0 +1,35 @@
+
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    <h3>{{ action }}</h3>
+    {% if all_blockchains %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                {% for blockchain in all_blockchains %}
+                    <tr>
+                        <td>{{ blockchain.name }}</td>
+                        <td><a href="{% url 'blockchain_szczegoly' blockchain.id %}">Pokaż szczegóły</a></td>
+                    </tr>
+                  
+                {% endfor %}
+               
+            </tbody>
+        </table>
+        <p>
+            <a href="{% url 'blockchain_nowy' %}">Dodaj nowy blockchain</a>
+        </p>
+    {% else %}
+        <p>Nie dodano żadnego blockchainu</p>
+    {% endif %}
+{% endblock content %}

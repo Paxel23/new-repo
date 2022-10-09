@@ -1,0 +1,134 @@
+
+html {
+    background-image: url(https://img.freepik.com/darmowe-zdjecie/3d-ilustracyjny-cyfrowy-blokowy-lancuchowy-kod-niska-wielokatna-siatka-trojkatow-swiecacych-w-sieci-niebieskich-kropek_92790-116.jpg?w=996);
+    background-size: cover;
+    background-color:rgba(255, 89, 0, 0.945)(114, 40, 40);
+    font-family: 'Arial', Sans-serif;
+    font-size: 18px;   
+
+      }
+  body {  
+    background-color: rgba(255, 255, 255, 0.774);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 800px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    margin: auto auto;
+    
+    }
+    p {  
+      text-align: justify;
+  text-justify: inter-word;
+  padding: 50px;
+  border: 1px;
+  
+      
+      }
+    
+ 
+  h1{
+    font-size: 39px;
+    text-align: center;
+    padding: 16px ;    
+   color: rgb(41, 10, 11);
+   text-decoration:wavy;
+   }
+  h2{
+       font-size: 28px;
+       padding: 16px ;    
+      color: rgb(7, 6, 5);
+      font-size: 23px;
+   }
+    table,td,th {
+      border: 1px solid black;
+      background-color: rgb(134, 220, 226);
+      margin: 10px;
+      align-items: auto;
+      align-self:auto;  
+      text-align: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  a:link{
+      color:rgb(16, 4, 48)
+      }
+      a:visited{
+          color:rgb(10, 0, 34)
+      }
+    
+    
+    .button-19 {
+      appearance: button;
+      background-color: #1899D6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: din-round,sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      line-height: 20px;
+      margin: 0;
+      outline: none;
+      overflow: visible;
+      padding: 13px 16px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 50%;
+    }
+    
+    .button-19:after {
+      background-clip: padding-box;
+      background-color: #1CB0F6;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    
+    .button-19:main,
+    .button-19:focus {
+      user-select: auto;
+    }
+    
+    .button-19:hover:not(:disabled) {
+      filter: brightness(1.1);
+    }
+    
+    .button-19:disabled {
+      cursor: auto;
+    }
+    
+    .content {
+      max-width: 576px;
+      background: white;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      padding: 2rem;
+      border-radius: 1rem;
+    }   
+
+
+

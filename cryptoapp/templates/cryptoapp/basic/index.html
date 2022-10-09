@@ -1,0 +1,26 @@
+{% extends 'cryptoapp/base.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+    <h3>{{ action }}</h3>
+    {% if all_basics %}
+        
+                {% for basic in all_basics %}
+                    <tr>
+                        <td> <a href="{% url 'basics_szczegoly' basic.id %}" class="button-19">{{ basic.name }}</a></td>
+                        
+
+                      
+                    </tr>
+                {% endfor %}
+       
+        <p>
+            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
+        </p>
+    {% else %}
+        <p>Nie dodano żadnego artykułu</p>
+    {% endif %}
+{% endblock content %}

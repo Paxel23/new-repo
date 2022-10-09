@@ -1,0 +1,40 @@
+{% extends 'cryptoapp/main.html' %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+<p>
+    <a href="{% url 'index' %}"> Powrót do strony głównej</a>
+</p>
+<section>
+    <div class="container py-2">
+        
+            <table class="table table-striped text-center table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Nazwa</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Logo</th>
+                        <th scope="col">Aktualna cena (USD)</th>
+                        <th scope="col">Kapitalizacja (USD)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelka">
+                    {% for i in coingeckoapi|slice:":5" %}
+                    <tr>
+                        <td><h5 style="color: rgb(0, 0, 0);">{{i.name}}</h5></td>
+                        <td>{{i.symbol}}</td>
+                        <td class="text-center"><img src="{{i.image}}"></td>
+                        <td style="color:rgb(22, 11, 4);">{{i.current_price}}</td>
+                        <td style="color:rgb(4, 15, 8);">{{i.market_cap}}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock content %}

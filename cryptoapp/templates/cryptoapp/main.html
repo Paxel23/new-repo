@@ -1,0 +1,144 @@
+{% extends 'cryptoapp/base3.html' %}
+
+
+{% block title %}
+    CryptoStart
+{% endblock title %}
+
+{% block action %}
+    {{ action }}
+{% endblock action%}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="cryptoapp/css/new.css">
+    <link rel="shortcut icon" href="file:///C:/Users/spal2/CryptoApp/cryptosite/cryptoapp/img/logos.png" type="image/x-icon">
+    {% load static %} <link rel="logo" href="cryptoapp\static\cryptoapp\img\logos.png.png">
+    
+
+
+</head>
+
+
+
+<body>
+    
+  
+    <div class="main">
+
+        <div class="nav-bar">
+        
+            {% load static %} <a href="./index.html"> <img src="{% static "C:\Users\spal2\CryptoApp\cryptosite\cryptoapp\static\cryptoapp\img\logos.png " %}" alt="logo" /> </a>
+            
+            <ul class="menu">
+                <li><a href="{% url 'index' %}" class="button-19">HOME</a></li>
+                <li><a href="{% url 'cryptocurrencies' %}" class="button-19" >Ranking Kryptowalut</a></li>
+                <li><a href="{% url 'basic' %}" class="button-19"> Podstawowa wiedza</a></li>
+                <li><a href="{% url 'dict' %}" class="button-19"> Słownik pojęć</a></li>
+                <li><a href="{% url 'tutorial' %}" class="button-19"> Poradniki</a></li>
+                <li><a href="{% url 'news' %}" class="button-19"> News</a></li>
+            
+                <li><a href="https://www.survio.com/survey/d/H2Q8X5N7V7V7W6E3R" class="button-19"> Ankieta</a></li>
+            </ul>
+    
+           
+    
+        </div>
+
+        <div id="slider" class="image-slider">
+
+            
+
+<<<<<<< HEAD
+            {% load static %}   <img id='slider-img' src="{% static "C:\Users\spal2\CryptoApp\cryptosite\cryptoapp\static\cryptoapp\img\3.jpg " %}" alt="Buildings Constructed by this Company" /> </a>
+=======
+            {% load static %}   <img id='slider-img' src="{% static "C:\Users\spal2\CryptoApp\cryptosite\cryptoapp\static\cryptoapp\img\3.jpg " %}" alt="foto" /> </a>
+>>>>>>> Cryptoapp, first commit
+        </div>
+        <div class="tag-line">
+            <p><a href="{% url 'basic' %}" >Dowiedz się jak zaczać swoją przygodę z technologią blockchain</a></p>
+            <br>
+               
+        </div>
+        <a href="{% url 'basic' %}" class="button-19"> Podstawowa wiedza</a><br>
+               <a href="{% url 'dict' %}" class="button-19"> Słownik pojęć</a>
+               <a href="{% url 'tutorial' %}" class="button-19"> Poradniki</a>
+        <h2>TOP 10 kryptowalut pod wzgędem kapitalizacji</h2>
+
+        
+        
+        
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Aktualna cena (USD)</th>
+            <th scope="col">Kapitalizacja (USD)</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in coingeckoapi|slice:":10" %}
+            <tr>
+        
+            <td><h5 style="color: rgb(0, 0, 0);">{{i.name}}</h5></td>
+            <td>{{i.symbol}}</td>
+            <td class="image3"><img src={{i.image}}></td>
+            <td style="color:rgb(22, 11, 4);">{{i.current_price}}</td>
+            <td style="color:rgb(4, 15, 8);">{{i.market_cap}}</td>
+        
+        
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+</div>
+
+<h2>Najnowsze newsy ze świata crypto</h2>
+<hr>
+
+<div class = "container2" >
+    <div class = "row">
+        {% for x in api.Data|slice:":4" %}
+        
+            <div class = "col-sm">
+                <div class="card" style="width: 15rem;">
+                    <img src="{{x.imageurl }}" class="card-img-top" alt="{{x.source }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{x.title}}</h5>
+                        <p class="card-text">{{x.body|safe}}</p>
+                        <a href="{{x.url}}" class="button-19">Read more</a>
+                    </div>
+                </div>
+                <br>
+            </div>    
+        {% endfor %}
+    </div>
+</div> 
+        
+           
+            
+            
+    
+
+     
+          
+    <div class="footer">
+        <p> Krzysztof Spałek, Warszwa | Copyright &copy; <a href="#">s21825</a> 2022</p>
+    </div>
+   
+</body>
+
+</html>
+
+{% endblock content %}
