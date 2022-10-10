@@ -34,7 +34,9 @@
 
         <div class="nav-bar">
         
-            {% load static %} <a href="./index.html"> <img src="{% static 'img/logos.png'    %}" alt="logo" /> </a>
+            {% load static %} <a href="./index.html"> <img src="{% static '/img/logos.png'    %}" alt="logo" /> </a>
+            
+           
            
             <ul class="menu">
                 <li><a href="{% url 'index' %}" class="button-19">HOME</a></li>
