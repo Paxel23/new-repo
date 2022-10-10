@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "cryptosite/cryptoapp/static/cryptoapp"
+STATIC_ROOT = "/home/kspalek/kspalek.pythonanywhere.com/static"
 
 
 # Default primary key field type
