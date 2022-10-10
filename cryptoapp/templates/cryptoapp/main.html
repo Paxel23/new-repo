@@ -19,8 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="cryptoapp/css/new.css">
-    <link rel="shortcut icon" href="file:///C:/Users/spal2/CryptoApp/cryptosite/cryptoapp/img/logos.png" type="image/x-icon">
-    {% load static %} <link rel="logo" href="cryptoapp\static\cryptoapp\img\logos.png.png">
+   
     
 
 
@@ -35,8 +34,8 @@
 
         <div class="nav-bar">
         
-            {% load static %} <a href="./index.html"> <img src="{% static 'cryptoapp/img/logos.png'    %}" alt="logo" /> </a>
-            
+            {% load static %} <a href="./index.html"> <img src="{% static '/cryptoapp/img/logos.png'    %}" alt="logo" /> </a>
+           
             <ul class="menu">
                 <li><a href="{% url 'index' %}" class="button-19">HOME</a></li>
                 <li><a href="{% url 'cryptocurrencies' %}" class="button-19" >Ranking Kryptowalut</a></li>
