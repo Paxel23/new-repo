@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "cryptoapp/static/cryptoapp"
+STATIC_ROOT = "cryptosite/cryptoapp/static/cryptoapp"
 
 
 # Default primary key field type
