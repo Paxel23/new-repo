@@ -52,13 +52,13 @@
            
     
         </div>
-        
+        {% load static %} <img  src='static/img/3.jpg' alt="fotoxx" />
         <div id="slider" class="image-slider">
 
             
-            <img  src='img/3.jpg' alt="fotoxx" />   
+            {% load static %}<img  src='img/3.jpg' alt="fotoxx" />   
             {% load static %}   <img id='slider-img' src="{% static 'img/3.jpg'  %}" alt="foto" /> 
-            <img  src='img/3.jpg' alt="fotoxx" />
+            
         </div>
         <div class="tag-line">
             <p><a href="{% url 'basic' %}" >Dowiedz się jak zaczać swoją przygodę z technologią blockchain</a></p>
